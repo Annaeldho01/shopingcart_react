@@ -5,6 +5,7 @@ import SearchProduct from './components/SearchProduct';
 import DeleteProduct from './components/DeleteProduct';
 import ViewAll from './components/ViewAll';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import ViewProduct from './components/ViewProduct';
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
         <Route path='/search' element={<SearchProduct/>}/>
         <Route path='/delete' element={<DeleteProduct/>}/>
         <Route path='/view' element={<ViewAll/>}/>
+        <Route path='/viewp' element={<ViewProduct/>}/>
+
       </Routes>
       </BrowserRouter>
       
